@@ -1,0 +1,42 @@
+{
+  "bakeries": [
+    {
+      "id": "1",
+      "titile": "Indian Sweet Market",
+      "items": [
+        "1 cheesecake",
+        "1 Breakcake",
+        "1 Gulaab Jaamuns",
+        "20 Cold drinks"
+      ],
+      "choices": "1. The first dessert meal you could choose include a large cake along with 10 pieces of Gulaab jaamun. 2. The second option can be to choose a cheesecake along with maple leaf cyrup. 3. The other option is  aparty option which is a very reasonable offer in which we offer 2 different cold drinks along with a large cheesecake and burgers.",
+      "order time": "1 day"
+    },
+    {
+      "id": "2",
+      "titile": "Layers of fun",
+      "items": [
+        "20 Chocolavas",
+        "30 CheesePizza",
+        "50 Dahi bhalle",
+        "40 Pastries",
+        "40 Tikki Chaat"
+      ],
+      "choices": "1. The first dessert meal you could choose include is 20 pasteries along with 20 chocolavas. 2. The second option can be to choose a dahi bhalle along tikka chaat. 3. The other option is   a party option which is a very reasonable offer in which we offer 2 different cold drinks along with a gourmet dinner.",
+      "order time": "4 hours"
+    },
+    {
+      "id": "3",
+      "titile": "Awesome Tastes",
+      "items": [
+        "100 Cold drinks",
+        "40 Cookies",
+        "10 Coffee",
+        "40 Pizza",
+        "80 Ice Creams"
+      ],
+      "choices": "1. The first dessert meal you could choose include can be a cookies along with your favorite coffe. 2. The second option can be to choose a large pizza with cold drink. 3. The other option is a party option which is a very reasonable offer in which we offer coffee (a variety to choose from) along with a large family Pizza.",
+      "order time": "2 hours"
+    }
+  ]
+}
