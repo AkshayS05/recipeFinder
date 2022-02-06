@@ -23,7 +23,7 @@ function App() {
             <Search />
           </Route>
           <Route path="/recipes/:id">
-            <Home />
+            <Recipe />
           </Route>
         </Switch>
       </BrowserRouter>
