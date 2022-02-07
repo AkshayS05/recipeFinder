@@ -37,6 +37,118 @@
       ],
       "method": "1. The first dessert meal you could choose include can be a cookies along with your favorite coffe. 2. The second option can be to choose a large pizza with cold drink. 3. The other option is a party option which is a very reasonable offer in which we offer coffee (a variety to choose from) along with a large family Pizza.",
       "cookingTime": "2 hours"
+    },
+    {
+      "title": "Pizza",
+      "ingredients": [
+        "potatoes",
+        "mushrooms",
+        "spinach"
+      ],
+      "method": "bake",
+      "cookingTime": "30 minutes",
+      "id": "EJena1P"
+    },
+    {
+      "title": "Pasta",
+      "ingredients": [
+        "pasta",
+        "sausce",
+        "green pepper"
+      ],
+      "method": "fry",
+      "cookingTime": "18 minutes",
+      "id": "UXaT3Qv"
+    },
+    {
+      "title": "Pasta",
+      "ingredients": [
+        "pasta",
+        "sausce",
+        "green pepper"
+      ],
+      "method": "fry",
+      "cookingTime": "18 minutes",
+      "id": "VqOidEK"
+    },
+    {
+      "title": "Burger",
+      "ingredients": [
+        "patty",
+        "vegeies",
+        "green pepper",
+        "buns"
+      ],
+      "method": "bake",
+      "cookingTime": "20 minutes",
+      "id": "EEojb2y"
+    },
+    {
+      "title": "Burger",
+      "ingredients": [
+        "patty",
+        "vegeies",
+        "green pepper",
+        "buns"
+      ],
+      "method": "bake",
+      "cookingTime": "20 minutes",
+      "id": "AspRPDX"
+    },
+    {
+      "title": "Burger",
+      "ingredients": [
+        "patty",
+        "vegeies",
+        "green pepper",
+        "buns"
+      ],
+      "method": "bake",
+      "cookingTime": "20 minutes",
+      "id": "ENPK_RU"
+    },
+    {
+      "title": "Burger",
+      "ingredients": [
+        "pepper",
+        "vegetables",
+        "sausces"
+      ],
+      "method": "bake",
+      "cookingTime": "10 minutes",
+      "id": "24zNWsH"
+    },
+    {
+      "title": "Burger",
+      "ingredients": [
+        "pepper",
+        "vegetables",
+        "sausces"
+      ],
+      "method": "bake",
+      "cookingTime": "10 minutes",
+      "id": "rGE1EuM"
+    },
+    {
+      "title": "Rajma",
+      "ingredients": [
+        "beans",
+        "spices",
+        "water"
+      ],
+      "method": "cook",
+      "cookingTime": "28 minutes",
+      "id": "c28Jp9-"
+    },
+    {
+      "title": "Ghobi",
+      "ingredients": [
+        "veg",
+        "spices"
+      ],
+      "method": "cook",
+      "cookingTime": "28 minutes",
+      "id": "bShKb1X"
     }
   ]
 }

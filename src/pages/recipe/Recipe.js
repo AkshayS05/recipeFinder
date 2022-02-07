@@ -18,8 +18,9 @@ export default function Recipe() {
   }, [error]);
   return (
     <div className="recipe">
-      {isPending && <h2 className="loading">Loading...</h2>}
       {error && <p className="error">{error}</p>}
+      {isPending && <h2 className="loading">Loading...</h2>}
+
       {recipe && (
         <>
           <h2 className="page-title">{recipe.title}</h2>

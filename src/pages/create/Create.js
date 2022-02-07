@@ -1,26 +1,44 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useFetch } from "../../hooks/useFetch";
+import { useHistory } from "react-router-dom";
 import "./Create.css";
 export default function Create() {
   const [title, setTitle] = useState("");
   const [method, setMethod] = useState("");
   const [cookingTime, setCookingTime] = useState("");
-  const [newIngredients, setNewIngredients] = useState("");
+  const [newIngredient, setNewIngredients] = useState("");
   const [ingredients, setIngredients] = useState([]);
   const ingredientInput = useRef(null);
-
+  const history = useHistory();
+  const { postData, data, error } = useFetch(
+    "http://localhost:3000/recipes",
+    "POST"
+  );
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(title, method, cookingTime, ingredients);
+    postData({
+      title,
+      ingredients,
+      method,
+      cookingTime: cookingTime + " minutes",
+    });
+    // console.log(title, ingredients, method, cookingTime);
   };
   const handleAdd = (e) => {
     e.preventDefault();
-    const ing = newIngredients.trim();
+    const ing = newIngredient.trim();
     if (ing && !ingredients.includes(ing)) {
       setIngredients((prevIngredient) => [...prevIngredient, ing]);
       setNewIngredients("");
-      // ingredientInput.current.focus();
+      ingredientInput.current.focus();
     }
   };
+  // redirect the user when we data response
+  useEffect(() => {
+    if (data) {
+      history.push("/");
+    }
+  }, [data]);
   return (
     <div className="create">
       <form onSubmit={handleSubmit}>
@@ -41,7 +59,7 @@ export default function Create() {
               <input
                 type="text"
                 onChange={(e) => setNewIngredients(e.target.value)}
-                value={newIngredients}
+                value={newIngredient}
                 ref={ingredientInput}
               />
               <button onClick={handleAdd} className="btn">
@@ -50,11 +68,10 @@ export default function Create() {
             </div>
           </span>
         </label>
-        <p>
-          {" "}
-          Current ingredients:{" "}
+        <p className="current-ingredients">
+          Current ingredients:
           {ingredients.map((i) => (
-            <em>{i},</em>
+            <em key={i}>{i},</em>
           ))}
         </p>
         <label>
