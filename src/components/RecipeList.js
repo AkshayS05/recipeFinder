@@ -5,13 +5,14 @@ import "./RecipeList.css";
 
 export default function RecipeList({ recipes }) {
   const { color } = useTheme();
+  const {mode}= useTheme()
   if (recipes.length === 0) {
     return <div className="error">No Recipes found 🤷‍♂️</div>;
   }
   return (
     <div className="recipe-list">
       {recipes.map((recipe) => (
-        <div key={recipe.id} className="card">
+        <div key={recipe.id} className={`card ${mode}`}>
           <div className="head-container">
             <h3>{recipe.title}</h3>
             {/* <img

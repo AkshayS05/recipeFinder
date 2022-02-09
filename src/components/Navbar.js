@@ -8,7 +8,7 @@ export default function Navbar() {
     <div className="navbar" style={{ background: color }}>
       <nav>
         <Link to="/" className="brand">
-          <h1>All Indian Bakeries</h1>
+          <h1>Recipe Maker</h1>
         </Link>
 
         <Searchbar />
