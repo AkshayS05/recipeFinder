@@ -1,5 +1,5 @@
 import firebase from "firebase/app";
-import "firebase firestore";
+import "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyDBEfBoaNvam4Dy5R12nJ0ihHW8hHYy2b8",
   authDomain: "awesome-recipes-5dd0e.firebaseapp.com",
