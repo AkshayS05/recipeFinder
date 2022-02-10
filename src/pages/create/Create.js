@@ -32,7 +32,7 @@ export default function Create() {
   };
   const handleAdd = (e) => {
     e.preventDefault();
-    const ing = newIngredient.trim();
+    const ing = newIngredient.trim().toLocaleLowerCase();
     if (ing && !ingredients.includes(ing)) {
       setIngredients((prevIngredient) => [...prevIngredient, ing]);
       setNewIngredients("");

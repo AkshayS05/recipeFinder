@@ -67,3 +67,9 @@
 .recipe-list .card.dark div {
   color: #e4e4e4;
 }
+.recipe-list img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
