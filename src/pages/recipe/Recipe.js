@@ -14,6 +14,7 @@ export default function Recipe() {
   const [error, setError] = useState(false);
   const history = useHistory();
 
+  const handleClick = () => {};
   useEffect(() => {
     setIsPending(true);
     projectFirestore
@@ -55,6 +56,7 @@ export default function Recipe() {
             ))}
           </ul>
           <p className="method">{recipe.method}</p>
+          <button onClick={() => handleClick}>Update</button>
         </>
       )}
     </div>

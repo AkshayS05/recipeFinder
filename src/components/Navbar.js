@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../hooks/useTheme";
+import logo from "../assets/logo.png";
 import "./Navbar.css";
 import Searchbar from "./Searchbar";
 export default function Navbar() {
@@ -8,7 +9,7 @@ export default function Navbar() {
     <div className="navbar" style={{ background: color }}>
       <nav>
         <Link to="/" className="brand">
-          <h1>Awesome Recipes</h1>
+          <img src={logo}></img>
         </Link>
 
         <Searchbar />
